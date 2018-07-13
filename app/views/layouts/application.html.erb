@@ -3,8 +3,6 @@
   <head>
     <title>Nameofapp</title>
 
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -18,7 +16,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,17 +25,46 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div> <!--end navbar-header -->
-        <div class="navbar-collapse collapse">
+        </div> <!end navbar-header -->
+        <!-- <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="">Home</a></li>
 						<li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
           </ul>
+        </div> <! nav -->
+      <!-- </div><! end container-fluid -->
+    <!-- </nav> <! end navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-expand-*" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <div class="projectName navbar-brand">
+            <a href="#" id="logo-tag">Edward Li</a>
+          </div> end projectName -->
+        </div> <!--end navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#HundredT">100 Thieves</a></li>
+						<li><a href="#C9">Cloud 9</a></li>
+            <li><a href="#Clutch">Clutch Gaming</a></li>
+            <li><a href="#CLG">Counter Logic Gaming</a></li>
+            <li><a href="#EF">Echo Fox</a></li>
+						<li><a href="#FLY">FlyQuest</a></li>
+						<li><a href="#GG">Golden Guardians</a></li>
+						<li><a href="#OG">Optic Gaming</a></li>
+						<li><a href="#TL">Team Liquid</a></li>
+						<li><a href="#TSM">Team SoloMid</a></li>
+          </ul>
         </div> <!-- nav -->
       </div><!-- end container-fluid -->
     </nav> <!-- end navbar-->
-    <%= image_tag("banner.jpg", class:"img-responsive") %>
+    <!-- <%= image_tag("banner.jpg", class:"img-responsive") %> -->
     <!-- <nav>
       <ul>
         <li><%= link_to "Home", root_path %></li>
