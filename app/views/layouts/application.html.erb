@@ -3,12 +3,12 @@
   <head>
     <title>Nameofapp</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,45 +25,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div> <!end navbar-header -->
-        <!-- <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div> <! nav -->
-      <!-- </div><! end container-fluid -->
-    <!-- </nav> <! end navbar-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-expand-*" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <div class="projectName navbar-brand">
-            <a href="#" id="logo-tag">Edward Li</a>
-          </div> end projectName -->
-        </div> <!--end navbar-header -->
+        </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#HundredT">100 Thieves</a></li>
-						<li><a href="#C9">Cloud 9</a></li>
-            <li><a href="#Clutch">Clutch Gaming</a></li>
-            <li><a href="#CLG">Counter Logic Gaming</a></li>
-            <li><a href="#EF">Echo Fox</a></li>
-						<li><a href="#FLY">FlyQuest</a></li>
-						<li><a href="#GG">Golden Guardians</a></li>
-						<li><a href="#OG">Optic Gaming</a></li>
-						<li><a href="#TL">Team Liquid</a></li>
-						<li><a href="#TSM">Team SoloMid</a></li>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
           </ul>
-        </div> <!-- nav -->
-      </div><!-- end container-fluid -->
-    </nav> <!-- end navbar-->
+        </div>
+      </div>
+     </nav>
+
     <!-- <%= image_tag("banner.jpg", class:"img-responsive") %> -->
     <!-- <nav>
       <ul>
