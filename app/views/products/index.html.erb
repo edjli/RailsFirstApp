@@ -31,15 +31,24 @@
 </table>
 <div class="container">
   <div class="row">
-    <% @products.each do |product| %>
+    <!-- <% @products.each do |product| %>
       <div class="col-md-6">
         <%= image_tag(product.image_url, class: "img-fluid") %>
         <a href="#"><h1><%= product.name %></h1></a>
         <p><%= product.description %></p>
         <p><%= product.colour %></p>
         <strong>$<%= product.price %></strong>
-      </div><!-- /col -->
-    <% end %>
+      </div>
+    <% end %>  into -->
+    <!-- <% @products.each do |product| %>
+      <%= render partial: "product", locals: {product: product} %>
+    <% end %> into -->
+    <!-- <% @products.each do |product| %>
+      <%= render product %>
+    <% end %> into -->
+    <!-- <%= render partial: "product", collection: @products %> into -->
+    <%= render @products %>
+
   </div>
 </div>
 
