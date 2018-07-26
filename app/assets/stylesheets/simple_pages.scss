@@ -10,6 +10,115 @@ li{
 footer{
   text-align: center;
 }
-html{
-  padding-top: 40px;
+body{
+  background-color: 	rgb(255,250,138);
 }
+
+#product_page{
+  height: 90px;
+  background-color: rgb(225,216,0);
+  margin-top:0;
+  color:#fff;
+  line-height: 100px;
+  font-size:20px;
+  padding: 0;
+  font-size: 4em;
+  text-align: center;
+  font-family: italiano;
+}
+header > h1{
+  height: 90px;
+  background-color: rgb(219,162,74);
+  margin-top:0;
+  margin-bottom:0;
+  color:#fff;
+  line-height: 100px;
+  font-size:20px;
+  padding: 0;
+  font-size: 5.5em;
+  text-align: center;
+  font-family: italiano;
+}
+.col-md-6 >a > h1{
+  background-color: rgb(206,0,0);
+  text-align: center;
+  font-size: 3em;
+  font-family: italiano;
+
+}
+.col-md-6>a > h1:hover{
+  color:rgb(219,162,74);
+  text-decoration: none;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    // border-style:ridge;
+    // border-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: italiano;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar, .navbar-default {
+    padding-top: 20px;
+    min-height: 90px;
+    background-color: rgb(225,35,1);
+    border: none;
+    margin-bottom: 0;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: rgb(219,162,74);
+    color: black;
+}
+
+
+.myCarousel{
+  max-width: 500px;
+  margin: 0 auto;
+}
+@font-face{
+  font-family: italiano;
+  src: url(Italianno-Regular.ttf)
+}
+
+.back-color{
+  background-color: rbg(255,250,138);
+}
+.new_edit{
+  margin-left: 2%;
+}
+form{
+  margin-left: 2%;
+}
+
+#feature_product{
+  text-align: center;
+}
+#carousel_des{
+  font-size: 22px;
+  color: black;
+}
+
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+
+  }
+
+.affix + .container-fluid {
+    padding-top: 70px;
+  }

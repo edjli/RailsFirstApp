@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="new_edit">
   <strong>Name:</strong>
   <%= @product.name %>
 </p>
 
-<p>
+<p class="new_edit">
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
 
-<p>
+<p class="new_edit">
   <strong>Image url:</strong>
   <%= @product.image_url %>
 </p>
 
-<p>
+<p class="new_edit">
   <strong>Colour:</strong>
   <%= @product.colour %>
 </p>
 
-<p>
+<p class="new_edit">
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<p class="new_edit"><%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %></p>

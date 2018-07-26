@@ -1,5 +1,5 @@
-<h2>Featured Product:</h2>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<h2 id="feature_product">Featured Product:</h2>
+<div id="carouselExampleIndicators" class="carousel slide myCarousel" data-ride="carousel">
   <ol class="carousel-indicators">
       <% @products.each do |product| %>
         <li data-target="#carouselExampleIndicators" data-slide-to="<% @products.find_index(product)-1 %>" class="<%= " active" if product == @products.first %>"></li>
@@ -10,7 +10,7 @@
       <div class="item<%= " active" if product == @products.first %>">
           <%= image_tag(product.image_url) %>
           <div class="carousel-caption d-none d-md-block">
-            <%= product.name %>
+            <p id="carousel_des"><%= product.name %></p>
           </div>
       </div>
     <% end %>
