@@ -106,6 +106,7 @@ form{
 label{
   margin-top: -7px;
   margin-bottom: 0;
+  color: white;
 }
 .new_edit >a:hover{
   box-shadow: none;
@@ -113,8 +114,9 @@ label{
   background-color: transparent;
   text-decoration: none;
 }
-label{
-  color: white;
+.form_edit{
+  margin-left: 20%;
+  color:black;
 }
 #submit{
   color:black;
@@ -126,7 +128,13 @@ label{
   font-size: 22px;
   color: black;
 }
-
+#contact{
+  text-align: center;
+}
+.form-control{
+  width: 60%;
+  margin-left: 20%;
+}
 .affix {
       top: 0;
       width: 100%;
