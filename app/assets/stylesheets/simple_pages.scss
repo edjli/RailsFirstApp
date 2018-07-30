@@ -103,7 +103,22 @@ header > h1{
 form{
   margin-left: 2%;
 }
-
+label{
+  margin-top: -7px;
+  margin-bottom: 0;
+}
+.new_edit >a:hover{
+  box-shadow: none;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+label{
+  color: white;
+}
+#submit{
+  color:black;
+}
 #feature_product{
   text-align: center;
 }
