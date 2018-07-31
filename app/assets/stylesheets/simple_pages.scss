@@ -103,16 +103,35 @@ header > h1{
 form{
   margin-left: 2%;
 }
-label{
+label:not(#remember):not(.edits){
   margin-top: -7px;
   margin-bottom: 0;
   color: white;
+}
+.edits{
+  margin-bottom: 0px;
+}
+#remember{
+  color: gray;
+  display: inline;
+}
+div.field{
+  margin-bottom: 0px;
 }
 .new_edit >a:hover{
   box-shadow: none;
   color: black;
   background-color: transparent;
   text-decoration: none;
+}
+a:hover{
+  box-shadow: none;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a{
+  margin-left: 2%;
 }
 .form_edit{
   margin-left: 20%;

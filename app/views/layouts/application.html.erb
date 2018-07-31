@@ -26,7 +26,8 @@
     <header>
       <h1>Slice</h1>
     </header>
-
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <nav class="navbar navbar-inverse" data-spy ="affix" data-offset-top="100" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -43,11 +44,24 @@
             <li><%= link_to "About", simple_pages_about_path %></li>
             <li><%= link_to "Contact", simple_pages_contact_path %></li>
             <li><%= link_to "Products", root_path %></li>
+            <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+            </li>
+            <% else %>
+            <li class="nav-item">
+              <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+            </li>
+            <% end %>
+            </li>
             <li><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
               <%= form.label :q, 'Search for:' %>
               <%= form.text_field :q, id: 'q', value: params[:q] %>
               <div id="submit"><%= form.submit 'Search' %></div>
             <% end %></li>
+
+  
+
           </ul>
         </div>
       </div>
