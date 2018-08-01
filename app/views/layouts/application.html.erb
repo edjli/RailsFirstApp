@@ -26,8 +26,14 @@
     <header>
       <h1>Slice</h1>
     </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    
+    <% if notice %>
+      <p id="notice" class="alert alert-primary" role="alert"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p id="alert" class="alert alert-secondary" role="alert"><%= alert %></p>
+    <% end %>
+
     <nav class="navbar navbar-inverse" data-spy ="affix" data-offset-top="100" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -60,7 +66,7 @@
               <div id="submit"><%= form.submit 'Search' %></div>
             <% end %></li>
 
-  
+
 
           </ul>
         </div>
