@@ -26,13 +26,20 @@
     <header>
       <h1>Slice</h1>
     </header>
-    
-    <% if notice %>
+    <div class="container notifications">
+        <% if notice %>
+            <p id="notice" class="alert alert-success" role="alert"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p id="alert" class="alert alert-danger" role="alert"><%= alert %></p>
+        <% end %>
+      </div>
+    <!-- <% if notice %>
       <p id="notice" class="alert alert-primary" role="alert"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p id="alert" class="alert alert-secondary" role="alert"><%= alert %></p>
-    <% end %>
+    <% end %> -->
 
     <nav class="navbar navbar-inverse" data-spy ="affix" data-offset-top="100" role="navigation">
       <div class="container-fluid">
