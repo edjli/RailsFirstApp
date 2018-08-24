@@ -1,9 +1,11 @@
 class CommentsController < ApplicationController
+
+
   def create
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
-    @comments = @comments.paginate(:page => params[:page], :per_page => 2)
+
     respond_to do |format|
       if @comment.save
         format.html { redirect_to @product, notice: 'Review was created successfully.' }

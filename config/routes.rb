@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
+  
   get 'simple_pages/about'
   get 'simple_pages/contact'
   get 'simple_pages/index'
   get 'simple_pages/landing_page'
-
+  get 'simple_pages/login'
   post 'simple_pages/thank_you'
   # get 'simple_pages#landing_page'
 
