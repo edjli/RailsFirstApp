@@ -1,6 +1,7 @@
 <div class="product-reviews new_edit">
     <% @comments.each do |comment| %>
-        <div class="row">
+      <% render comment %>
+        <!-- <div class="row">
             <hr>
             <p>
               <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
@@ -12,7 +13,7 @@
             <div class="rated" data-score="<%= comment.rating %>"></div>
             <p><%= comment.body %></p>
 
-        </div>
+        </div> -->
     <% end %>
     <% @comments = @comments.paginate(:page => params[:page], :per_page => 1) %>
     <%= will_paginate @comments %>
